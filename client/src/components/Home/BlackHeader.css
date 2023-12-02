@@ -1,0 +1,24 @@
+.Header_outer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header_outer2 > .Header_logo2 {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header_outer2 > .Header_logo2 > img {
+  height: 40%;
+  margin-left: 15%;
+}
+
+.Header_outer2 > div > .Header_Login2 {
+  margin-right: 5vw;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}

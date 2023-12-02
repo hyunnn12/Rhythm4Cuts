@@ -1,0 +1,167 @@
+.modify-info {
+  margin-top: 80px; /* 상단으로부터의 마진을 증가 */
+}
+
+.modify-item {
+  display: flex;
+  flex-direction: column;
+  /* 추가 */
+  justify-content: space-between;
+  align-items: center;
+  /* 원래 center */
+  margin-bottom: 40px;
+  height: auto;
+  position: relative;
+  min-height: 80px;
+}
+
+.modify-name {
+  flex: 1; /* 추가 */
+  font-weight: bold;
+  font-size: large;
+  position: relative;
+  text-align: right; /* 추가 */
+  height: 40px;
+  line-height: 40px;
+  color: white;
+}
+
+.modify-nickName-name {
+  top: 38px;
+  position: absolute;
+  left: 110px;
+  font-weight: bold;
+  color: white;
+}
+
+.modify-password-name {
+  top: 38px;
+  position: absolute;
+  left: 110px;
+  font-weight: bold;
+  color: white;
+}
+
+.modify-name::after {
+  content: "";
+  position: absolute;
+  right: -130px; /* 수정 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5px;
+  background-color: blue;
+  height: 30px;
+}
+
+.modify-nickName-name::after {
+  content: "";
+  position: absolute;
+  right: -133px; /* 수정 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5px;
+  background-color: blue;
+  height: 30px;
+}
+
+.modify-password-name::after {
+  content: "";
+  position: absolute;
+  right: -118px; /* 수정 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  background-color: blue;
+  height: 30px;
+}
+
+.modify-value {
+  flex: 1; /* 추가 */
+  text-align: left;
+  font-size: large;
+  margin-left: 200px;
+  width: 400px;
+  color: white;
+}
+
+.modify-info-container {
+  /* 사진을 정보의 오른쪽에 */
+  display: flex;
+  align-items: center; /* 사진의 중앙 정렬->본래 사진의 크기대로 */
+  flex-direction: row;
+  justify-content: center;
+}
+
+.profile-picture {
+  width: 250px;
+  height: 250px;
+}
+
+.modify-button {
+  /* 버튼 설정 */
+  font-weight: 550;
+  position: absolute;
+  left: 90px;
+  top: 10px;
+  width: 100px; /* adjust as needed */
+  /* You may also want to adjust the text alignment */
+  text-align: center;
+}
+
+.complete-button {
+  /* 버튼 설정 */
+  font-weight: 550;
+  margin-top: 20px; /* 이 부분을 추가. 두 버튼에 동일한 상단 마진을 적용합니다. */
+  margin-right: 10px;
+  position: absolute;
+  /* 요소의 위치->절대적인 위치 지정 */
+  left: 90px;
+  /* 오른쪽으로 얼마나 떨어져라 */
+  top: 100px;
+  width: 100px; /* adjust as needed */
+  /* You may also want to adjust the text alignment */
+  text-align: center;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.modify-button:hover {
+  background-color: blue; /* 파란색으로 변경 */
+}
+
+.complete-button:hover {
+  background-color: green; /* 파란색으로 변경 */
+}
+
+.edit-button {
+  position: absolute;
+  right: -200px; /* 이 값을 조정하여 버튼의 위치를 원하는대로 조절하세요 */
+}
+
+.item-container {
+  width: 500px; /* 이 값을 조절하여 원하는 간격을 얻으세요. */
+  display: flex;
+  justify-content: space-between;
+}
+
+.modify-input {
+  font-size: large;
+  margin-left: 400px;
+  margin-top: 35px;
+  width: 200px;
+}
+
+.modify-input::placeholder {
+  font-size: 0.65em; /* 플레이스홀더의 글자 크기를 줄임 */
+}
+
+.mainn-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}

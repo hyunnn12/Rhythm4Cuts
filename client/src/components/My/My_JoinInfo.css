@@ -1,0 +1,89 @@
+.Join-info {
+  padding: 70px;
+  margin-left: 100px; /* 왼쪽으로부터의 마진을 증가 */
+  margin-top: 20px; /* 상단으로부터의 마진을 증가 */
+  height: 80%;
+}
+.Join-item {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px; /* 각 항목 사이에 간격을 둡니다. */
+}
+
+.Join-birth {
+  text-align: left;
+  font-size: large;
+  margin-left: 300px; /* 이름과 값 사이의 간격을 설정합니다. */
+  width: 100px;
+}
+
+.Join-name {
+  font-weight: bold; /* 이름을 두껍게 표시 */
+  font-size: large;
+  position: relative; /* position 속성을 relative로 설정하여 .Join-name 요소 내부에서 ::after 요소의 위치를 정의할 수 있게 합니다. */
+  width: 120px; /* 값과 세로선을 고정한 상태에서 이름과 간격 설정 */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 120px;
+}
+
+.Join-name::after {
+  content: ""; /* 가상 요소에는 반드시 content 속성이 필요합니다. 실제로 내용을 표시하지 않을 것이므로 빈 문자열로 설정합니다. */
+  position: absolute; /* position 속성을 absolute로 설정하여 .Join-name 요소 내부에서 ::after 요소의 위치를 자유롭게 조정할 수 있게 합니다. */
+  right: -250px; /* 선을 .Join-name 요소의 오른쪽에 위치시킵니다. */
+  top: 0; /* 선을 .Join-name 요소의 상단에 위치시킵니다. */
+  bottom: 0; /* 선을 .Join-name 요소의 하단에 위치시킵니다. */
+  width: 2px; /* 선의 너비를 설정합니다. */
+  background-color: #a264ee; /* 선의 색상을 설정합니다. */
+}
+
+.Join-name-topline::before {
+  content: "";
+  position: absolute;
+  left: calc(
+    -11vw + 120px
+  ); /* 선을 .Join-name 요소의 왼쪽 끝에서 시작하도록 설정 */
+  top: -70px;
+  width: 70vw; /* 선의 너비를 화면 너비 전체로 설정 */
+  border-top: 2px solid #a264ee;
+}
+
+.Join-value {
+  text-align: left;
+  font-size: large;
+  margin-left: 300px; /* 이름과 값 사이의 간격을 설정합니다. */
+  flex-grow: 0;
+  /* 이 값을 0으로 설정하여 input 필드의 크기가 변하지 않도록 합니다. */
+  flex-shrink: 0;
+  /* 이 값을 0으로 설정하여 input 필드의 크기가 변하지 않도록 합니다. */
+  flex-basis: auto;
+}
+
+::placeholder {
+  font-size: 0.65em; /* 플레이스홀더의 글자 크기를 줄임 */
+}
+
+.Join-warning {
+  flex-grow: 1;
+  /* 이 값을 1로 설정하여 경고 메시지가 남은 공간을 차지하도록 합니다. */
+  flex-shrink: 1;
+  /* 이 값을 1로 설정하여 공간이 부족하면 경고 메시지가 줄어들도록 합니다. */
+  flex-basis: auto;
+  margin-left: 10px;
+  /* 경고 메시지와 input 필드 사이에 약간의 공간을 추가합니다. */
+}
+
+.Join-info-container {
+  /* 사진을 정보의 오른쪽에 */
+  display: flex;
+  align-items: center; /* 사진의 중앙 정렬->본래 사진의 크기대로 */
+}
+
+.password-check {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 405px; /* 이미지의 오른쪽 위치를 설정합니다. */
+  margin-top: -20px;
+}

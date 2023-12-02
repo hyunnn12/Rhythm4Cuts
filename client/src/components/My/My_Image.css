@@ -1,0 +1,26 @@
+.image-size {
+  width: 150px; /* 원하는 너비로 변경 */
+  height: 250px; /* 원하는 높이로 변경 */
+}
+
+/* My_Image.css */
+
+.image-block {
+  display: flex;
+  /* 아이템을 행 또는 열로 정렬 */
+  flex-direction: column;
+  /* 세로로 정렬 */
+  align-items: center;
+  /* 가로로 정렬했으니 거기서 중앙으로 정렬 */
+}
+
+.download-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #f593b6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}

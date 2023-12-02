@@ -1,0 +1,41 @@
+.add-friend {
+  float: right;
+  font-weight: bold;
+}
+
+.main-container {
+  justify-content: space-between;
+}
+
+/* 제목이 h1이기 때문에 제목에 대한 css */
+.main-content h1 {
+  position: relative; /* position 속성을 relative로 설정하여 h1 요소 내부에서 ::after 요소의 위치를 조정할 수 있게 합니다. */
+  font-weight: 500; /* 원하는 굵기로 설정합니다. */
+  padding-bottom: 15px; /* 선과 글자의 간격두기 */
+  margin-left: 70px; /* 오른쪽으로 이동 */
+}
+
+/* 제목 밑의 선 설정 css */
+.main-content h1::after {
+  content: ""; /* 가상 요소에는 반드시 content 속성이 필요합니다. 실제로 내용을 표시하지 않을 것이므로 빈 문자열로 설정합니다. */
+  position: absolute; /* position 속성을 absolute로 설정하여 h1 요소 내부에서 ::after 요소의 위치를 자유롭게 조정할 수 있게 합니다. */
+  left: -20px; /* 선을 왼쪽으로 50px 이동시킵니다. */
+  bottom: 0; /* 선을 h1 요소의 하단에 위치시킵니다. */
+  width: 1150px; /* 선의 길이 설정 */
+  border-bottom: 2px solid blue; /* 선을 추가합니다. */
+}
+
+.my-friend-page {
+  display: flex;
+  /* flex 컨테이터로 만들어 컨테이너 내의 자식 요소들은 flex 아이템이 되고, 이 아이템들은 flex 레이아웃을 따른다.
+main-content 내의 모든 직접적인 자식 요소를 flex 아이템으로 만든다. */
+  justify-content: space-between;
+  /* flex 컨테이너 내의 아이템들 사이에 공간을 배치하는 방법을 지정한다.
+첫번째 아이템을 컨테이너의 시작 부분에, 마지막 아이템을 끝 부분에 위치시키고, 나머지 아이템은 균등하게 분배된
+공간 사이에 위치시킨다.
+즉 h1을 왼쪽에 "친구 추가"를 오른쪽에 배치 */
+  align-items: center;
+  /* flex 아이템들이 컨테이너의 교차 축을 따라 어떻게 정렬될지를 지정한다.
+center값은 아이템들을 컨테이너의 가운데에 위치시킨다.
+즉 h1과 "친구추가"가 수직 방향으로 중앙에 위치하도록 한다. */
+}

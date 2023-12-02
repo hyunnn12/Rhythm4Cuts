@@ -1,0 +1,46 @@
+.user-info {
+  padding: 20px;
+  margin-left: 100px; /* 왼쪽으로부터의 마진을 증가 */
+  margin-top: 20px; /* 상단으로부터의 마진을 증가 */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px; /* 각 항목 사이에 간격을 둡니다. */
+}
+
+.info-name {
+  font-weight: bold;
+  font-size: large;
+  position: relative;
+  width: 120px;
+  color: #ffffff;
+}
+
+.info-name::after {
+  content: ""; /* 가상 요소에는 반드시 content 속성이 필요합니다. 실제로 내용을 표시하지 않을 것이므로 빈 문자열로 설정합니다. */
+  position: absolute; /* position 속성을 absolute로 설정하여 .info-name 요소 내부에서 ::after 요소의 위치를 자유롭게 조정할 수 있게 합니다. */
+  right: -250px; /* 선을 .info-name 요소의 오른쪽에 위치시킵니다. */
+  top: 0; /* 선을 .info-name 요소의 상단에 위치시킵니다. */
+  bottom: 0; /* 선을 .info-name 요소의 하단에 위치시킵니다. */
+  width: 1.5px; /* 선의 너비를 설정합니다. */
+  background-color: red;
+}
+
+.info-value {
+  text-align: left;
+  font-size: large;
+  margin-left: 300px; /* 이름과 값 사이의 간격을 설정합니다. */
+  color: #ffffff;
+}
+
+.user-info-container {
+  /* 사진을 정보의 오른쪽에 */
+  display: flex;
+  align-items: center; /* 사진의 중앙 정렬->본래 사진의 크기대로 */
+}
+
+.profile-picture {
+  margin-left: 170px; /* 프로필 사진과 정보 사이의 간격 설정 */
+}

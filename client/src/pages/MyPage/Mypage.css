@@ -1,0 +1,44 @@
+/* 사이드 바 위치 */
+.sidebar {
+  margin-left: 50px;
+  margin-top: 150px;
+}
+
+/* 사이드바 살짝 오른쪽으로 */
+.sidebar-item {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* SideBar와 MainContent 컴포넌트를 수평으로 배치
+align-items: flex-start 속성은 두 컴포넌트가 상단에 맞춰져 있도록 합니다.
+따라서 제목 부분을 위쪽으로 보내준다. */
+.page-container {
+  display: flex;
+}
+
+/* 제목 css */
+
+.buttons {
+  position: absolute;
+  /* 요소의 위치->절대적인 위치 지정 */
+  right: 400px;
+  /* 오른쪽으로 얼마나 떨어져라 */
+  bottom: 200px;
+  /* 밑에서 얼마나 떨어져라 */
+}
+
+.edit-button {
+  /* 이 부분은 두 버튼에 공통으로 적용되는 스타일. */
+  font-weight: 550;
+  margin-top: 20px; /* 이 부분을 추가. 두 버튼에 동일한 상단 마진을 적용합니다. */
+  right: 30px;
+}
+
+.delete-button {
+  font-weight: 550;
+  margin-top: 20px; /* 이 부분을 추가. 두 버튼에 동일한 상단 마진을 적용합니다. */
+  margin-right: 10px;
+  right: 10px;
+}
